@@ -280,5 +280,25 @@ if(answer == "Y"){
     console.log("I don't understand")
 }
 
+// values of an array
+// let container = []
+let people = ["bob", "joe", "sam"]
 
-oiuoiuouioui
+// Arrays are indexed in starting with 0
+let stuff = [1, 2, 3, "test", true]
+
+//Pop and push
+// let container = ["red", "blue", "yellow", "brown"]
+container.pop()
+
+container.push("orange")
+
+//shift and ushift
+// let container = ["red", "blue", "yellow", "brown"]
+container.shift()
+container.unshift("purple")
+
+//changing pecific elements
+let container = ["red", "blue", "yellow", "brown"]
+container[0]
+container[0] = "purple"
