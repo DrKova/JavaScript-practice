@@ -267,7 +267,7 @@ if(!areYouHappy){
 
 //Activity: truth or dare
 
-let answer = prompt("Do you like cheese? Type Y or N")
+// let answer = prompt("Do you like cheese? Type Y or N")
 let isItTrue
 
 if(answer == "Y"){
@@ -298,7 +298,30 @@ container.push("orange")
 container.shift()
 container.unshift("purple")
 
-//changing pecific elements
+//changing specific elements
 let container = ["red", "blue", "yellow", "brown"]
 container[0]
 container[0] = "purple"
+
+//Splice and Slice
+let container = ["red", "blue", "yellow", "brown"]
+container.splice(0, 0, "black") //add black to the front
+container.splice(0, 1) //remove the first element
+container.splice(0, 1, "black") //remove first element and insert black
+
+let container = ["red", "blue", "yellow", "brown"]
+let newContainer = container.slice(3)
+
+//Activity all the things
+let things = []
+let answer
+answer = prompt("What is your first favorite thing?")
+things.push(answer)
+
+answer = prompt("What is your second favorite thing?")
+things.push(answer)
+
+answer = prompt("What is your third favorite thing")
+things.push(answer)
+
+console.log(things)
