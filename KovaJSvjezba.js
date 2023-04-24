@@ -313,8 +313,8 @@ let container = ["red", "blue", "yellow", "brown"]
 let newContainer = container.slice(3)
 
 //Activity all the things
-let things = []
-let answer
+//let things = []
+//let answer
 answer = prompt("What is your first favorite thing?")
 things.push(answer)
 
@@ -325,3 +325,100 @@ answer = prompt("What is your third favorite thing")
 things.push(answer)
 
 console.log(things)
+
+let container = []
+//let answer
+answer = prompt("What is your favorite Bosnian movie?")
+container.push(answer)
+
+answer = prompt("What was your favorite movie in 1994?")
+container.push(answer)
+
+answer = prompt("What was your favorite movie in 1996?")
+container.push(answer)
+
+answer = prompt("What is your favorite movie genre?")
+container.push(answer)
+
+answer = prompt("What movie have you watched over 2 times?")
+container.push(answer)
+
+answer = prompt("What is your all time favorite movie?")
+container.push(answer)
+container.splice(0,0, "LOTR")
+container.pop()
+console.log(container)
+
+
+//for Loop
+// for (starting place; condition, incrementer) []
+// i++
+// i = 1 + 1
+for (let i = 1; i < 10; i++) {
+    console.log(i)
+}
+for (var I = 1; i < 5; i++) {
+    console.log("Hello" + i)
+}
+// never ending loops
+//infinite loop
+for (var i = 1; i < 10; i++) {
+    console.log()
+}
+// for loop with an if condition
+for (let i = 1; i < 5; i++){
+    if (i == 1) {
+        console.log()
+    } else if (i == 2) {
+        console.log("Bye")
+    }else if(i == 3){
+        console.log("Yo")
+    } else if (i == 4){
+        console.log("See ya")
+    }
+}
+// breaking the for loop
+for (var i = 1; i < 10; i++){
+    if (i == 5) {
+        break;
+    } else {
+        console.log(i)
+    }
+}
+//for loop with an array
+let things = [1, 2, "hello", "bye"]
+for (let i = 1; i < 5; i++){
+    console.log(things[i])
+}
+//activity this will be a bit tricky
+let answer = prompt("Type YES or NO")
+let answers = ["YES", "NO"]
+let responses = ["You said Yes", "You said no", "You didn't follow directions"]
+for (let i = 0; i < 2; i++) {
+    if (answer != answers[0] && answer != answers[1]) {
+        console.log(responses[2])
+        break;
+    } else if(answer == answers[i]) {
+        console.log(responses[i])
+    }
+}
+
+//for loop in a for loop
+let numbers = [1, 2, 3, 4, 5]
+var letters = ["a", "b", "c"]
+
+for (let i = 0; i < 5; i++){
+    console.log(numbers[i])
+    for (var t = 0; t < 3; t++){
+        console.log(letters[t])
+    }
+}
+// activity: the square
+let square
+for (let i = 0; i <5; i++) {
+    square = square + "*"
+    for (let t = 0; t < 5; t++){
+
+    }
+}
+console.log(square)
