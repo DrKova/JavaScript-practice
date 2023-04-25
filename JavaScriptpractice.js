@@ -615,8 +615,51 @@ function thing() {
 thing()
 console.log("Outside function: " + num)
 
-let num = 1
+//let num = 1
 if (1 == 1){
 console.log("if statement:" + num)
 }
 console.log("Outside if statement:" + num)
+
+//Object basics
+let person = {
+    firstName: "Emir",
+    favColor: "Blue",
+    favNumber: 8,
+    isMarried: true,
+    children: ["child1", "child2"],
+    thing: {
+        name: "object",
+        color: "yellow"
+    }
+
+}
+
+//Activity: Familiy tree
+
+let family = {
+    father : {
+        firstName : "Thomas",
+        lastName : "Wayne",
+        isAlive : false
+    },
+    either : {
+        firstName : "Martha",
+        lastName : "Wayne",
+        isAlive : false
+    },
+    children : [
+        {
+            firstName: "Bruce",
+            lastName: "Wayne",
+            isAlive : true
+        }
+    ],
+    butler : {
+        firstName : "Alfred",
+        lastName : "Pennyworth",
+        isAlive : true
+    },
+    isRich : true
+}
+
