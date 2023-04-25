@@ -609,11 +609,14 @@ let num = 1
 function thing() {
     num = 2
     let num2 = 4
-    console.log("Function " + num2)
+    console.log("Function " + num)
 }
 
 thing()
-console.log("Outside function: " + num2)
+console.log("Outside function: " + num)
 
-//const
-
+let num = 1
+if (1 == 1){
+console.log("if statement:" + num)
+}
+console.log("Outside if statement:" + num)
