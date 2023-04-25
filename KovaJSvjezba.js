@@ -414,11 +414,206 @@ for (let i = 0; i < 5; i++){
     }
 }
 // activity: the square
-let square
+let square = ""
 for (let i = 0; i <5; i++) {
-    square = square + "*"
     for (let t = 0; t < 5; t++){
-
+        square = square + "*"
     }
+    square = square  + "\n"
 }
 console.log(square)
+
+
+let triangle = "" 
+
+for (let i = 0; i < 5; i++){
+    for (let t = 0; t < i; t++){
+       
+        triangle = triangle + "*"
+    }
+    triangle = triangle + "\n" 
+}
+console.log(triangle)
+
+//while loop
+let i = 0;
+while (i < 5){
+    console.log(i)
+    i++
+}
+
+//do while loop
+
+let i = 0
+do {
+    console.log(i)
+    i++
+} while (i < 5)
+
+//for vs while vs Do While
+//diff between FOR and DO/DO WHILE
+for (let i = 0; i < 5; i++){
+    console.log(i)
+}
+
+let answer0
+let areYouHappy2 = true
+while (areYouHappy2) {
+    answer0 = prompt("Are you happy")
+    if (answer0 == "yes") {
+        console.log("You are happy")     
+    } else {
+        areYouHappy2 = false 
+        console.log("You are not happy")
+    }
+    
+}
+// Diff between Do and Do While
+
+let i = 0
+while (i < 0){
+    console.log(i)
+    i++
+}
+
+
+let i = 0
+do {
+    console.log(i)
+    i++
+} while (i < 0)
+
+//Switch Statements
+
+//let favFood ="pasta"
+
+if (favFood == "pizza") {
+    console.log("Pizza!")
+} else if (favFood == "pasta") {
+    console.log("Pasta!")
+} else {
+    console.log(favFood)
+}
+
+let favFood = "pasta"
+    switch(favFood) {
+        case "pizza" :
+            console.log("Pizza!")
+            break
+        case "pasta" :
+            console.log("Pasta!")
+            break
+        default :
+            console.log(favFood)
+    }
+
+    let favColor = "red"
+    switch(favColor) {
+        case "blue" :
+    console.log("Violets are blue")
+        break
+        case "red" :
+    console.log("Roses are red")
+        break
+    default:
+    console.log("Sugar is sweet")
+}
+
+//function basics
+//Defining a function
+
+
+const message = function (){
+console.log("Hello there!")
+}
+message()
+
+//Declaring a function
+
+function message(){
+    console.log("By now")
+} message()
+     
+function newMessage(){
+    console.log(1)
+    console.log(2)
+    console.log(3)
+} 
+newMessage()
+newMessage()
+newMessage()
+newMessage()
+newMessage()
+
+//returning data
+
+function getMessage(){
+    return "Hello there"
+}
+    getMessage()
+console.log(getMessage())
+
+
+
+function getNumber() {
+    return 1
+}
+console.log(getNumber())
+
+
+function getCost(){
+    //Cost of oranges
+    return 5
+} 
+console.log("Five oranges cost about 5$" + getCost())
+
+
+
+function getNumber(){
+    return 5
+}
+//console.log(getNumber() + 5)
+
+
+function getSomething(){
+    return getNumber() + 5
+}
+console.log(getSomething())
+
+
+//Parameters and Arguments
+
+function messages (message1, message2) {
+    console.log(message1)
+    console.log(message2)
+}
+messages ("Message 1, Message 2")
+
+
+//Activity : Area of a rectangle
+
+function rectArea(length, width) {
+    let area = length * width
+    return area
+}
+rectArea(2, 5)
+
+//const
+const something = "bob"
+
+const arr =[1, 2, 3]
+
+//Variable scope
+
+let num = 1
+function thing() {
+    num = 2
+    let num2 = 4
+    console.log("Function " + num2)
+}
+
+thing()
+console.log("Outside function: " + num2)
+
+//const
+
